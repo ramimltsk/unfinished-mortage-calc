@@ -4,6 +4,7 @@ body {
     justify-content: center;
     background-color: hsl(202, 86%, 94%);
     font-family: "Plus Jakarta Sans", serif;
+    height: 90vh;
 }
 
 p {
@@ -15,15 +16,23 @@ h1 {
     margin: 0;
 }
 
+.all {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 .left {
     background-color: white;
     padding: 40px;
+    width: 500px;
 }
 
 .title {
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 15px;
 }
 
 .title button {
@@ -77,4 +86,154 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.twoInputs {
+    display: flex;
+    gap: 50px;
+}
+
+.type {
+    border: 1px solid hsl(200, 24%, 40%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.checks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    appearance: auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid hsl(200, 24%, 40%);
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input[type="radio"]:checked {
+    border: 2px solid hsl(61, 70%, 52%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: hsl(61, 70%, 52%);
+}
+
+.calc {
+    background-color: hsl(61, 70%, 52%);
+    margin: 0;
+}
+
+.calculate {
+    margin-top: 40px;
+    background-color: hsl(61, 70%, 52%);
+    border: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: bold;
+}
+
+.right {
+    background-color: hsl(202, 55%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 100px;
+    padding: 30px;
+}
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptyTxt {
+    color: hsl(200, 26%, 54%);
+    text-align: center;
+}
+
+.emptyTitle {
+    color: white;
+}
+
+.active {
+    background-color: hsl(61, 86%, 77%);
+    border-color: hsl(61, 70%, 52%);
+}
+
+
+
+
+.results {
+    display: none;
+}
+
+.resultIcon2 {
+    background-color: hsl(201, 54%, 9%);
+    color: hsl(61, 70%, 52%);
+    font-size: 40px;
+}
+
+.resultIcon1 {
+    background-color: hsl(201, 54%, 9%);
+    color: white;
+    font-size: 20px;
+}
+
+.smallTitle {
+    color: hsl(200, 24%, 40%);
+    font-size: 15px;
+}
+
+.resultTxt {
+    color: hsl(200, 24%, 40%);
+
+}
+
+.topAmount {
+    color: hsl(61, 70%, 52%);
+    font-size: 60px;
+    border-bottom: 2px solid hsl(202, 55%, 16%);
+}
+
+.bottomAmount {
+    color: white;
+}
+
+.main {
+    background-color: hsl(201, 54%, 9%);
+    padding: 20px;
+    padding-right: 100px;
+    border-top: 3px solid hsl(61, 70%, 52%);
+    border-radius: 10px;
 }
